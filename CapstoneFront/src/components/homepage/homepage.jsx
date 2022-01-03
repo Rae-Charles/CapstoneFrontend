@@ -4,38 +4,67 @@ import React, { useState , useEffect} from 'react';
 import './homepage.css'
 
 
-
 function HomePage(){
-    const [products, setProducts] = useState([])
-
+    const [books, setBooks] = useState([])
 
     //useEffect determines the first thing that will run when the page loads
     useEffect(()=>{
-        getProducts()
+        getBooks()
     },[])
 
-    const getProducts = async () =>{
-        let response = await axios.get('https://localhost:44394/api/products')
-        //setProduct is talking to products(variable on like 43) and tells it what its value should be
-        setProducts(response.data)
+    const getBooks = async () =>{
+        let response = await axios.get('http://127.0.0.1:8000/api/books')
+        setBooks(response.data)
     }
 
-    const addToCart = (product) =>{
-        console.log(product)
+    const addToCart = (books) =>{
+        console.log(books)
         //post to shopping cart request will go here
     }
 
     return (
         <div>
-                <table> 
-                    
-                   
-                    </table>
-                </div>
-            )
-            
-        }
+            <div className= "container">
+                <div className="card">
+                    <center><table className="table">
+                        <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Genre</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>     
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Genre</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>        
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Genre</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>        
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Genre</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>                                                        
+                        </tbody>      
+                    </table></center>
+                </div>    
+            </div>
+        </div>
+        )
+    }
                  
-             
-            
+                      
 export default HomePage;

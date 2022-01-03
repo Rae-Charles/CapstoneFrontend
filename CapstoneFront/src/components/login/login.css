@@ -1,0 +1,12 @@
+.login{
+    width: 350px;
+    border: 4px solid lightslategray;
+    margin: 0 auto;
+    background-color: lightblue;
+}
+
+body{
+    background: url("https://s10.gifyu.com/images/bookstore.jpg") rgba(192, 212, 216, 0.488);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
