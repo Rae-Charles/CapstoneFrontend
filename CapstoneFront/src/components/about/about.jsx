@@ -7,24 +7,46 @@ function About(props){
   console.log(props);
 
     return(
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title><h1>About Us</h1></title>
+      </head>
       <body>
-        <div>
-          <h2>Hello Friend!</h2>
-        </div>
+          <div class = "container">
+              <h1>About Us</h1>
+              <p> 
+                  Here at Book World, we realized that shopping for books on platforms such as google or amazon can be daunting, especially
+                  with the current pandemic reeking havoc on our society. So, we wanted to create a more user-friendly application for customers 
+                  like you to shop for books. We got our start in the great state of Texas, in the city of San Antonio. 
+                  We have a brick and mortar location to serve all your needs for acquiring books quickly at an afforable cost! Stop by and visit us at the address listed, or give us a call
+                  at the listed phone number for more information.
+              </p>
+              <div class="information">
+                  Address: 123 Main St<br></br>
+                  San Antonio, TX 78258<br></br>
+                  <br></br>
+                  Phone: 210-555-1234
+              </div>
+              </div>
       </body>
+      </html>
     )
     };
 
 
+export default About;
 
-
-/* <html lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><h1>About Us</h1></title>
 </head>
+    <body>
     <div class="about-section">
       <h1>About Us Page</h1>
       <p>   Here at Book World, we realized that shopping for books on platform such as google or amazon can be daunting.
@@ -73,7 +95,8 @@ function About(props){
     </div>
   </div>
 </div>
-</html> */
+</body>
+</html>
 
 /* <html lang="en">
 <head>
@@ -83,7 +106,7 @@ function About(props){
     <title><h1>About Us</h1></title>
 </head>
 <body>
-    <div class "container">
+    <div class = "container">
         <h1>About Us</h1>
         <p> 
             Here at Book World, we realized that shopping for books on platform such as google or amazon can be daunting.
@@ -97,6 +120,7 @@ function About(props){
             San Antonio, TX 78258<br></br>
             <br></br>
             Phone: 210-555-1234
+        </div>
         </div>
 </body>
 </html> */
