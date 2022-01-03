@@ -6,6 +6,7 @@ import NewUserLogin from './components/newuserlogin/newuserlogin';
 import Login from './components/login/login';
 import HomePage from './components/homepage/homepage';
 import About from './components/about/about';
+import jwtDecode from 'jwt-decode';
 // import Logout from '.components/logout/logout';
 
 
@@ -32,7 +33,7 @@ render() {
       <Routes>
           <Route path="/" exact element={<NewUserLogin/>} />
           <Route path="/login" element={<Login />} />
-          <Route path="/home" element={<HomePage/>} />
+          <Route path="/homepage" element={<HomePage/>} />
           <Route path="/about" element={<About/>} />
           {/* <Route path="/logout" element={<Logout />} /> */}
         </Routes>
