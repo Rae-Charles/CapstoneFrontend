@@ -47,8 +47,13 @@ function ShoppingCart(props){
     const [books, setBooks] = useState([])
 
     //useEffect determines the first thing that will run when the page loads
-    ShoppingCart = async (user) => {
-        console.log(user.id)
+    useEffect(()=>{
+        ShoppingCart(props.user)
+    },[])
+    
+
+    const ShoppingCart = async (user) => {
+        console.log(props.user)
 
         const jwtToken=localStorage.getItem('token')    
         var results = await axios ({

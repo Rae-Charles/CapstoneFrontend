@@ -25,9 +25,12 @@ class App extends Component{
 
   componentDidMount(){
     const jwt = localStorage.getItem('token');
+    const user = jwtDecode(jwt);
+    console.log(user)
+
     try {
       const user = jwtDecode(jwt);
-      this.setState({user});
+      this.setState((user));
 
     } catch (error) {
       console.log(error);
@@ -36,10 +39,10 @@ class App extends Component{
 
   getUser = async () => {
     const jwtToken = localStorage.getItem("token");
+    console.log(`${jwtToken}`);
     try {
         var results = await axios({
             method: 'GET',
-            // url: 'https://localhost:44394/api/auth/login',
             url: 'http://127.0.0.1:8000/api/auth/login/',
             headers: {Authorization: `Bearer ${jwtToken}`},
         });
@@ -67,7 +70,7 @@ class App extends Component{
             <Route path="/" exact element={<NewUserLogin/>} />
             <Route path="/login" element={<Login />} />
             <Route path="/homepage" element={<HomePage/>} />
-            <Route path="/shoppingcart" element={<ShoppingCart/>} />
+            <Route path="/shoppingcart" element={<ShoppingCart user={user}/>} />
             <Route path="/about" element={<About/>} />
             {/* <Route path="/logout" element={<Logout />} /> */}
           </Routes>

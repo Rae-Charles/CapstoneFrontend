@@ -18,22 +18,22 @@ function HomePage(props){
     },[])
 
 
-    const addToCart = (books) =>{
-        console.log(books)
-        //post to shopping cart request will go here
-        addToCart = async (books) => {
-            var results = await axios ({
-                method: "POST",
-                url: "http://127.0.0.1:8000/api/shoppingcart/",
-                data: {
-                    user_id: 1,
-                    book: 1,
-                    quantity: +1,
-                }
-            })
-            console.log(results.data)
-        }
-    }
+    // const addToCart = (books) =>{
+    //     console.log(books)
+    //     //post to shopping cart request will go here
+    //     addToCart = async (books) => {
+    //         var results = await axios ({
+    //             method: "POST",
+    //             url: "http://127.0.0.1:8000/api/shoppingcart/",
+    //             data: {
+    //                 user_id: 1,
+    //                 book: 1,
+    //                 quantity: +1,
+    //             }
+    //         })
+    //         console.log(results.data)
+    //     }
+    // }
 
     // const deleteFromCart = (books) =>{
     //     console.log(books)
@@ -89,57 +89,3 @@ function HomePage(props){
     }              
                       
 export default HomePage;
-
-
-
-// const books = [
-//   {
-//     'id': 1,
-//     'title': '1st Item',
-//     'description': 'Description here.'
-//   },
-//   {
-//     'id': 2,
-//     'title': '2nd Item',
-//     'description': 'Another description here.'
-//   },
-//   {
-//     'id': 3,
-//     'title': '3rd Item',
-//     'description': 'Third description here.'
-//   }
-// ];
-
-
-// class HomePage extends React.Component {    
-//     state = {
-//       books: []
-//     };
-  
-//     async componentDidMount() {
-//         try {
-//           const books= await axios.get('http://127.0.0.1:8000/api/books');
-//           this.setState({
-//             books
-//           });
-//         } catch (e) {
-//           console.log(e);
-//         }
-//       }
-    
-  
-//     render() {
-//       return (
-//         <div>
-//           {this.state.books.map(books => (
-//             <div>
-//               <h1>{books.title}</h1>
-//               <span>{books.description}</span>
-//             </div>
-//           ))}
-//         </div>
-//       );
-//     }
-//   }
-  
-//   export default HomePage; 
