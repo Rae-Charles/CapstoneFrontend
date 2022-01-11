@@ -19,12 +19,13 @@ function About(props){
               </p>
               <br></br>
               <br></br>
-              <div className="CEO">
+              <div className="ceo">
                 <h3>CEO and Founder</h3>
+                <h4>A Message From Our Founder</h4>
                   <p>
-                    Jane Doe is our creater and founder here at BookWorld and hope that you have a great experience
-                    while browing through our online library. We hope to bring more features to our members soon, such as
-                    a more convenient shopping experience by adding related-works and a more streamline checkout process.
+                    Jane Doe is our creater and founder here at BookWorld and she hopes that you have a great experience
+                    while browsing through our online library. We hope to bring more features to our members soon, such as
+                    a more convenient shopping experience by adding related-works, and a more streamline checkout process.
                   </p>
               </div>
               <br></br>

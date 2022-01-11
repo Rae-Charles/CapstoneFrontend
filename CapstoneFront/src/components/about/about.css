@@ -7,18 +7,20 @@ body {
     box-sizing: border-box;
   }
   
+  .container {
+    padding: 0 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: linen;
   
-  .about-section {
+  }
+
+  .ceo {
     padding: 50px;
     text-align: center;
     background-color: #474e5d;
     color: white;
-  }
-  
-  .container {
-    padding: 0 16px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: linen;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none;
   }
 
   .address{

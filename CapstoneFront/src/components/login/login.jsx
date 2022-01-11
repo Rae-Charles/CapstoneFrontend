@@ -28,7 +28,7 @@ await axios ({
     })
     .then(response => localStorage.setItem('token', response.data.token));
 
-    window.location="/home"
+    window.location="/homepage"
 }
 
 render(){

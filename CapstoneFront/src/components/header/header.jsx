@@ -9,11 +9,13 @@ function Header(){
     let user = JSON.parse(localStorage.getItem('user-info'))
     console.warn(user)
     return (
-        <div class="navbar">
-        <a class="active" href="/homepage">Home</a>
+        <div className="navbar">
+        <a className="active" href="/homepage">Home</a>
         <a href="/login" > Login </a>
         <a href="/" > New User </a>
+        <a href="/shoppingcart" > Shopping Cart </a>
         <a href="/about" > About Us </a>
+        {/* <a href="/logout" > Logout </a> */}
         </div>
     );
 }

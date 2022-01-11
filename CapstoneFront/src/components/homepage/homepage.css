@@ -1,7 +1,12 @@
 .table{
     width: auto;
+    background-color: linen;
 }
 
 .container{
     width: auto;
+}
+
+.book{
+    background-color: linen;
 }
